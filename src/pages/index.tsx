@@ -3,10 +3,12 @@ import useVideo from '@/hooks/useVideo';
 import Video from '@/components/Video';
 import ColumnCenter from '@/components/ColumnCenter';
 import RowCenter from '@/components/RowCenter';
+import Grid from "@/components/Grid";
 import Head from "next/head";
 import Link from 'next/link';
 import Section from '@/components/Section';
 import RowStart from '@/components/RowStart';
+import RowOptions from '@/components/home/RowOptions'
 
 const index = () => {
 
@@ -25,14 +27,14 @@ const index = () => {
 
                 <Section classes='bg-[#F0F8FF]'>
 
-                    <ColumnCenter classes='h-[80vh] text-center p-10'>
+                    <ColumnCenter classes='h-[80vh] text-center'>
 
                         <div className='animate__animated animate__slideInRight rounded-tl-xl rounded-tr-xl rounded-br-xl rounded-bl flex pt-1 pb-1 pr-4 pl-4 mb-3 border-[#0084FF] border-2 border-solid'>
-                            <p className='text-[#0084FF] font-bold text-sm'>WEBINARS EXCLUSIVOS</p>
+                            <p className='text-[#0084FF] font-bold text-[10px] sm:text-sm'>WEBINARS EXCLUSIVOS</p>
                         </div>
 
                         <div className="animate__animated animate__slideInLeft whitespace-nowrap flex flex-col">
-                            <p className='font-medium sm:text-[40px] mb-1 text-xl text-[#1C3C50]'>Menos Conversinha,</p>
+                            <p className='font-medium sm:text-[40px] mb-1 text-[24px] text-[#1C3C50]'>Menos Conversinha,</p>
                             <div className='mt-1'>
                                 <p style={
                                     {
@@ -50,7 +52,7 @@ const index = () => {
 
                         <div className='pr-10 pl-10 animate__animated animate__slideInRight'>
                             <hr className='border mb-5'></hr>
-                            <p className='text-[#1C3C50] text-md font-semibold'>Conheça as estratégias que <span className='font-bold'>mudaram o jogo</span> e como aplicá-las no seu negócio</p>
+                            <p className='text-[#1C3C50] text-sm sm:text-md font-semibold'>Conheça as estratégias que <span className='font-bold'>mudaram o jogo</span> e como aplicá-las no seu negócio</p>
                         </div>
 
                     </ColumnCenter>
@@ -60,10 +62,20 @@ const index = () => {
 
                 <Section classes='bg-[#FFFFFF]'>
 
-                    <RowCenter classes=''>
-                        {videos?.map((video) => {
-                            return <Video video={video} />
-                        })}
+                    <RowCenter>
+
+                        <RowOptions>
+
+                        </RowOptions>
+                        
+                        <Grid>
+
+                            {videos?.map((video) => {
+                                return <Video video={video} />
+                            })}
+
+                        </Grid>
+
                     </RowCenter>
 
                 </Section>
@@ -82,20 +94,20 @@ const index = () => {
                                 <span className="font-extrabold"> 4 minutos.</span>
                             </p>
                             <hr className='border'></hr>
-                            <RowStart classes="mt-5">
-                                <button className='text-white font-semibold rounded-full bg-[#0083FF] pr-10 pl-10'>
+                            <RowStart classes="mt-5 sm:justify-start justify-center">
+                                <button className='text-white font-semibold rounded-full bg-[#0083FF] pr-10 pl-10 sm:py-0 py-3'>
                                     VER DEMONSTRAÇÃO
                                 </button>
-                                <div className="justify-between flex flex-col">
+                                <div className="justify-between flex flex-col sm:mt-0 mt-3">
                                     <Image src="/assets/selo_RD.png" width={205} height={73} alt="" />
                                 </div>
                             </RowStart>
-                            <RowCenter classes='mt-4'>
-                                <Image className="h-max mr-1 relative top-1" src="/assets/no-card-dark.webp" width={16} height={16} alt="" />
-                                <p className='m-1 text-center'>
+                            <RowCenter classes='mt-5'>
+                                <Image className="h-max relative top-1 mr-1" src="/assets/no-card-dark.webp" width={16} height={16} alt="" />
+                                <p className='mr-1 text-center'>
                                     <span className='font-semibold'>Não é </span>necessário Cartão de Crédito<span> |</span></p>
-                                <Image className="h-max relative top-1" src="/assets/rating.webp" width={92} height={16} alt="" />
-                                <p className='text-center'><span>4.9/5 média de satisfação </span></p>
+                                <Image className="h-max relative top-1 mr-1" src="/assets/rating.webp" width={92} height={16} alt="" />
+                                <p className='text-center'><span className='font-semibold'>4.9</span>/5 média de satisfação </p>
 
                             </RowCenter>
                         </div>
