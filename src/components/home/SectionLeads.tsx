@@ -7,7 +7,7 @@ import BlueButton from "@/components/ui/BlueButton";
 const SectionLeads = () => {
     return (
 
-        <RowCenter classes='p-10'>
+        <RowCenter>
 
             <div className="sm:pr-10 pr-0">
                 <Image src="/assets/img/comparativo_img_CTA.png" width={739} height={687} alt="" />
@@ -32,7 +32,6 @@ const SectionLeads = () => {
                         <span className='font-semibold'>Não é </span>necessário Cartão de Crédito<span> |</span></p>
                     <Image className="h-max relative top-1 mr-1" src="/assets/img/rating.webp" width={92} height={16} alt="" />
                     <p className='text-center'><span className='font-semibold'>4.9</span>/5 média de satisfação </p>
-
                 </RowCenter>
             </ColumnCenter>
 

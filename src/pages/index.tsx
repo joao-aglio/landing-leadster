@@ -18,32 +18,30 @@ const index = () => {
                 <link rel="icon" href="/assets/img/asset-header.png" />
             </Head>
 
-            <main>
+            <ModalMain />
 
-                <ModalMain/>
+            <main className="flex flex-col min-h-[100vh] grow">
 
                 <Section classes='bg-[#F0F8FF]'>
 
-                    <SectionPrincipal/>
+                    <SectionPrincipal />
 
                 </Section>
 
 
                 <Section classes='bg-[#FFFFFF]'>
 
-                    <SectionVideos/>
+                    <SectionVideos />
 
                 </Section>
 
                 <Section classes='bg-[#F0F8FF] h-[80vh]'>
 
-                    <SectionLeads/>
+                    <SectionLeads />
 
-                </Section> 
-
+                </Section>
 
             </main>
-
 
         </>
     )
