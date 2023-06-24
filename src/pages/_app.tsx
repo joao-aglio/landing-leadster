@@ -1,7 +1,7 @@
 import '@/pages/globals.css';
 import 'animate.css';
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/semantic/Header";
+import Footer from "@/components/semantic/Footer";
 import type { AppProps } from "next/app";
 
 // This default export is required in a new `pages/_app.js` file.
