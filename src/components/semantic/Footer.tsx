@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
     return (
 
-        <footer className="fixed">
+        <footer>
 
             <div className="bg-[#FFFFFF] fixed z-10 left-0 flex p-10 w-screen justify-center">
                 <Image

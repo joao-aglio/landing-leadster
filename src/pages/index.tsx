@@ -4,6 +4,8 @@ import RowOptions from '@/components/home/RowOptions'
 import SectionPrincipal from '@/components/home/SectionPrincipal'
 import SectionLeads from '@/components/home/SectionLeads';
 import SectionVideos from '@/components/home/SectionVideos';
+import ModalMain from '@/components/home/ModalMain';
+import Footer from "@/components/semantic/Footer";
 
 const index = () => {
 
@@ -17,6 +19,8 @@ const index = () => {
             </Head>
 
             <main>
+
+                <ModalMain/>
 
                 <Section classes='bg-[#F0F8FF]'>
 
@@ -35,9 +39,11 @@ const index = () => {
 
                     <SectionLeads/>
 
-                </Section>
+                </Section> 
+
 
             </main>
+
 
         </>
     )

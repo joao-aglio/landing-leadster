@@ -1,3 +1,5 @@
 export type Button = {
-    texto?: string
+    texto?: string,
+    color?: string,
+    colorIcone?: string
 }

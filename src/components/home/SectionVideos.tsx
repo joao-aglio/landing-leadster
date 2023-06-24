@@ -3,6 +3,7 @@ import ColumnCenter  from "@/components/flex/ColumnCenter";
 import Grid  from "@/components/ui/Grid";
 import useVideo from "@/hooks/useVideo";
 import Video from "@/components/ui/Video";
+import Pagination from "@/components/home/Pagination";
 
 const SectionVideos = () => {
 
@@ -10,7 +11,7 @@ const SectionVideos = () => {
 
     return (
 
-        <ColumnCenter classes="max-w-[1150px] mx-auto">
+        <ColumnCenter classes="max-w-[1150px] mx-auto pt-20">
 
             <RowOptions>
 
@@ -23,6 +24,8 @@ const SectionVideos = () => {
                 })}
 
             </Grid>
+
+            <Pagination quantidade={4}/>
 
         </ColumnCenter>
 

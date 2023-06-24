@@ -6,9 +6,9 @@ const RowOptions = (props: Prop) => {
 
     return (
         <>
-            <div className="flex flex-wrap sm:justify-between justify-center my-10 py-10 border-b-2">
+            <div className="flex flex-wrap justify-center lg:justify-between mb-6 lg:mb-0 gap-1">
 
-                <div className="flex sm:justify-start justify-center flex-wrap">
+                <div className="flex justify-center flex-wrap gap-1">
                     <Button texto="Agências" />
                     <Button texto="Chatbot" />
                     <Button texto="Marketing Digital" />
