@@ -60,7 +60,7 @@ const Footer = () => {
                 </RowCenter>
 
 
-                <div className="my-10 flex flex-row flex-wrap justify-between">
+                <div className="my-10 sm:mx-0 mx-3 flex flex-row flex-wrap justify-between">
                     <p className="text-[#578696] text-sm sm:mx-40">
                         Copyright © 2015 - 2022 Todos os direitos reservados | <span className="text-[#0084FF]">Leadster</span>
                     </p>

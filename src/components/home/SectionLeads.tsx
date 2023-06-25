@@ -39,10 +39,6 @@ const SectionLeads = () => {
                 </RowCenter>
             </ColumnCenter>
 
-            
-
-            
-
         </RowCenter>
 
     );
