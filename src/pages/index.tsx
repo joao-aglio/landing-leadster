@@ -6,6 +6,7 @@ import SectionLeads from '@/components/home/SectionLeads';
 import SectionVideos from '@/components/home/SectionVideos';
 import ModalMain from '@/components/home/ModalMain';
 import Footer from "@/components/semantic/Footer";
+import Header from "@/components/semantic/Header";
 
 const index = () => {
 
@@ -15,12 +16,12 @@ const index = () => {
             <Head>
                 <title>Leadster</title>
                 <meta name="description" content="Landing page da Leadster!" />
-                <link rel="icon" href="/assets/img/asset-header.png" />
+                <link rel="icon" href="/assets/img/logo.ico" />
             </Head>
 
             <ModalMain />
 
-            <main className="flex flex-col min-h-[100vh] grow">
+            <Header/>
 
                 <Section classes='bg-[#F0F8FF]'>
 
@@ -35,13 +36,13 @@ const index = () => {
 
                 </Section>
 
-                <Section classes='bg-[#F0F8FF] h-[80vh]'>
+                <Section classes='bg-[#F0F8FF]'>
 
                     <SectionLeads />
 
                 </Section>
 
-            </main>
+            <Footer/>
 
         </>
     )

@@ -10,3 +10,9 @@
 body {
     font-family: "Plus Jakarta Sans";
 }
+
+.background {
+    background-image: url("../../public/assets/img/fundo.png");
+    background-position: -550px ;
+    background-repeat: no-repeat;
+}
