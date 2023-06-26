@@ -1,8 +1,19 @@
-Projeto de landing page feito em Next.js, juntamente com TypeScript, ESLint e Tailwind. 
+Projeto de landing page feito em Next.js, juntamente com TypeScript, ESLint, Tailwind e Redux. 
+
+São necessárias aa instalação das seguintes ferramentas instaladas:
+
+- [Node.js](https://nodejs.org/en/download)
+- [Git](https://git-scm.com/downloads)
+
+Em seguida, use o seguinte comando para clonar este repositório:
+
+```bash
+git clone https://github.com/aglitus/landing-leadster.git
+```  
 
 ## Como iniciar o projeto?
 
-Digite os seguintes comandos no terminal dentro raiz do projeto:
+Digite os seguintes comandos no terminal dentro da raiz do projeto:
 
 ```bash
 npm i
@@ -12,7 +23,7 @@ npm run dev
 
 Assim, o projeto estará disponível neste link: [http://localhost:3000](http://localhost:3000).
 
-Você também pode acessar o deploy do projeto no Vercel no link anexado neste repositório.
+Você também pode acessar o deploy do projeto no Vercel no [link](https://landing-leadster.vercel.app/) anexado neste repositório.
 
 
 ## Decisões tomadas em relação ao projeto
